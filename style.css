@@ -1,0 +1,210 @@
+*{
+    /*background: #e5e5e5;*/
+    background-image: url("imagenes/space.jpg");
+    background-size: 85%;
+}
+.logo{
+    position: absolute;
+    background: transparent;
+    left: 30px; 
+    top: 30px;
+}
+
+.texto{
+    background: transparent;
+    position: absolute;
+    top: 20%;
+    left: 35px;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    color: white;
+    resize: none;
+}
+
+::placeholder{color: white;}
+
+.vector{
+    position: absolute;
+    float: left;
+    margin-left: 30px;
+    background: transparent;
+    filter: invert(18%) sepia(29%) saturate(3014%) hue-rotate(186deg) brightness(97%) contrast(98%);
+    top: 80%;
+}
+
+.nota{
+    position: absolute;
+    background: transparent;
+    color: white;
+    top: 80%;
+    margin-left: 50px;
+}
+
+.boton-encriptar{
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #0A3871;
+    border: #0a3871;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 40%;
+    left: 20px;
+    
+}
+
+.boton-desencriptar{
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    margin: 0 230px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0A3871;
+    background: lightgray;
+    border: 1px solid #0A3871;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 40%;
+    left: 20px;
+}
+
+.boton-encriptar:hover, .boton-desencriptar:hover, .copiar:hover{
+    transform: scale(1.05);
+    transition: 1s all;
+}
+
+.rectangulo{
+    position: absolute;
+    left: 800px;
+    top: 30px;
+    width: 400px;
+    height: 525px;
+    border: none;
+    outline: none;
+    resize: none;
+    /*background: #FFFFFF;*/
+    background: transparent;
+    background-image: url("imagenes/nikolatesla.png");
+    background-repeat: no-repeat;
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    padding: 20px 0 0 10px;
+}
+
+.mensaje1{
+    position: absolute;
+    background: transparent;
+    color: white;
+    left: 780px;
+    top: 65%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+.mensaje2{
+    position: absolute;
+    background: transparent;
+    color: white;
+    left: 760px;
+    top: 75%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.copiar{
+    position: absolute;
+    left: 820px;
+    top: 85%;
+    border: 1px solid #0A3871;
+    border-radius: 15px;
+    background: #0A3871;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    height: 50px;
+    width: 310px;
+}
+
+@media screen and (max-width:480px){
+
+    *{
+        background-size: auto;
+    }
+
+    .logo{
+        top: 10%;
+        left: 20%;
+        width: 100px;
+        height: 100px;
+    }
+
+    .texto{
+        top: 30%;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .vector{
+        position: center;
+        left: 50%;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .nota{
+        margin-top: 1%;
+        left: 55%;
+        font-size: 25px;
+        width: 120%;
+        height: 80%;
+    }
+
+
+    .boton-encriptar, .boton-desencriptar{
+        margin-top: 185%;
+        left: 55%;
+        
+    }
+
+    .rectangulo{
+        left: 30%;
+        top: 120%;
+        width: 150%;
+        height: 50%;
+        text-align: center;
+        font-size: 40px;
+        padding-right: 80px;
+    }
+    
+    .mensaje1{
+        width: 120%;
+        left: 50%;
+        top: 160%;
+    }
+    .mensaje2{
+        width: 120%;
+        left: 40%;
+        top: 165%;
+        font-size: 20px;
+    }
+    
+    .copiar{
+        position: absolute;
+        left: 60%;
+        top: 180%;
+    }
+
+}
